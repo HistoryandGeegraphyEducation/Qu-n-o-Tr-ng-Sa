@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá các đảo thuộc quần đảo Trường Sa.">
+    <title>Đảo Trường Sa Lớn | Khám phá quần đảo Trường Sa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================================================
+         HEADER / HERO
+    ================================================== -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- ===== BÊN TRÁI: MẶT TRỜI / MẶT TRĂNG + LA BÀN ===== -->
+            <div class="hero-left">
+                <div class="celestial-body" id="celestial-body">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </div>
+                <div class="compass">
+                    <span class="compass-n">N</span>
+                    <span class="compass-e">E</span>
+                    <span class="compass-s">S</span>
+                    <span class="compass-w">W</span>
+                    <div class="compass-needle">
+                        <div class="needle-north"></div>
+                        <div class="needle-south"></div>
+                    </div>
+                    <div class="compass-center"></div>
+                </div>
+            </div>
+
+            <div class="hero-title">
+                <p class="hero-subtitle">QUẦN ĐẢO TRƯỜNG SA</p>
+                <h1 id="island-name">ĐẢO TRƯỜNG SA LỚN</h1>
+                <p class="hero-location" id="hero-location">Khánh Hòa · Việt Nam</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================================================
+         BỘ CHỌN ĐẢO
+    ================================================== -->
+    <section class="island-selector">
+        <div class="selector-container">
+            <p class="selector-label">KHÁM PHÁ CÁC ĐẢO</p>
+            <div class="island-buttons">
+                <button class="island-button active" type="button" data-island="truong-sa-lon">Trường Sa Lớn</button>
+                <button class="island-button" type="button" data-island="sinh-ton">Sinh Tồn</button>
+                <button class="island-button" type="button" data-island="song-tu-tay">Song Tử Tây</button>
+                <button class="island-button" type="button" data-island="an-bang">An Bang</button>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- ==================================================
+             TÀU & SÓNG BIỂN CHẠY NGANG
+        ================================================== -->
+        <div class="ship-container" id="ship-container">
+            <div class="ship-wave">〰〰〰</div>
+            <div class="ship-icon">🚢</div>
+        </div>
+
+        <!-- ==================================================
+             THÔNG TIN CƠ BẢN
+        ================================================== -->
+        <section class="basic-information">
+            <div class="basic-content">
+                <div class="basic-item">
+                    <div class="basic-icon"><span>⌖</span></div>
+                    <div class="basic-text">
+                        <h2>Vị trí:</h2>
+                        <p id="island-location">Quần đảo Trường Sa, Khánh Hòa</p>
+                    </div>
+                </div>
+                <div class="basic-item">
+                    <div class="basic-icon"><span>✧</span></div>
+                    <div class="basic-text">
+                        <h2>Tọa độ:</h2>
+                        <p id="island-coordinates">Đang cập nhật</p>
+                    </div>
+                </div>
+                <div class="basic-item">
+                    <div class="basic-icon"><span>◇</span></div>
+                    <div class="basic-text">
+                        <h2>Diện tích:</h2>
+                        <p id="island-area">Đang cập nhật</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-card">
+                <div class="map-placeholder">
+                    <div class="map-grid"></div>
+                    <div class="map-marker"><span>●</span></div>
+                    <div class="map-label vietnam">VIỆT NAM</div>
+                    <div class="map-label sea">BIỂN ĐÔNG</div>
+                    <div class="map-label island">TRƯỜNG SA</div>
+                </div>
+                <div class="image-label"><span>▧</span> Bản đồ vị trí</div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             ĐƯỜNG PHÂN CÁCH
+        ================================================== -->
+        <div class="sea-divider">
+            <span class="divider-line"></span>
+            <span class="wave-symbol">〰</span>
+            <span class="divider-line"></span>
+        </div>
+
+        <!-- ==================================================
+             THÔNG TIN ĐẢO
+        ================================================== -->
+        <section class="island-information">
+            <div class="section-header">
+                <div class="section-icon">〰</div>
+                <h2>Thông tin đảo</h2>
+            </div>
+            <div class="information-grid">
+                <article class="information-card image-card">
+                    <div class="gallery" id="island-gallery">
+                        <div class="gallery-main">
+                            <img id="gallery-main-image" src="images/truong-sa-lon-1.jpg" alt="Đảo Trường Sa Lớn">
+                            <button class="gallery-button gallery-prev" type="button" aria-label="Ảnh trước">‹</button>
+                            <button class="gallery-button gallery-next" type="button" aria-label="Ảnh tiếp theo">›</button>
+                        </div>
+                        <div class="gallery-thumbnails">
+                            <button class="gallery-thumbnail active" type="button" data-image="images/truong-sa-lon-1.jpg" aria-label="Xem ảnh 1">
+                                <img src="images/truong-sa-lon-1.jpg" alt="Ảnh 1 của Đảo Trường Sa Lớn">
+                            </button>
+                            <button class="gallery-thumbnail" type="button" data-image="images/truong-sa-lon-2.jpg" aria-label="Xem ảnh 2">
+                                <img src="images/truong-sa-lon-2.jpg" alt="Ảnh 2 của Đảo Trường Sa Lớn">
+                            </button>
+                            <button class="gallery-thumbnail" type="button" data-image="images/truong-sa-lon-3.jpg" aria-label="Xem ảnh 3">
+                                <img src="images/truong-sa-lon-3.jpg" alt="Ảnh 3 của Đảo Trường Sa Lớn">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-label"><span>▧</span> Hình ảnh</div>
+                </article>
+
+                <article class="information-card">
+                    <div class="card-title">
+                        <div class="card-icon">△</div>
+                        <h3>Địa hình:</h3>
+                    </div>
+                    <ul class="information-list" id="island-terrain"></ul>
+                </article>
+
+                <article class="information-card">
+                    <div class="card-title">
+                        <div class="card-icon">☼</div>
+                        <h3>Khí hậu:</h3>
+                    </div>
+                    <ul class="information-list" id="island-climate"></ul>
+                </article>
+
+                <article class="information-card">
+                    <div class="card-title">
+                        <div class="card-icon">◎</div>
+                        <h3>Hoạt động của con người:</h3>
+                    </div>
+                    <ul class="information-list" id="island-human-activity"></ul>
+                </article>
+            </div>
+
+            <div class="video-section">
+                <div class="video-title">
+                    <div class="play-icon">▶</div>
+                    <h2>Video</h2>
+                </div>
+                <div class="video-placeholder">
+                    <video id="island-video" class="island-video" controls preload="metadata" poster="images/truong-sa-lon-1.jpg">
+                        <source src="videos/truong-sa-lon.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ phát video.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wave"></div>
+        <p>KHÁM PHÁ QUẦN ĐẢO TRƯỜNG SA</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Âm thanh lời chào: script.js sẽ gán file MP3 theo đảo được chọn -->
+    <audio id="loi-chao-audio" preload="auto"></audio>
+</body>
+</html>
